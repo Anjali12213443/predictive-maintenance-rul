@@ -17,7 +17,7 @@ An end-to-end machine learning system that predicts the **Remaining Useful Life 
 | **Anomaly Detection** | Isolation Forest — 30% anomaly rate when RUL < 30 cycles |
 
 ---
-
+'''
 ## Project Structure
 ---
 predictive_maintenance/
@@ -34,7 +34,7 @@ predictive_maintenance/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
-
+'''
 ## Key Features
 
 - **Time-series feature engineering** — rolling statistics, lag features, rate-of-change, FFT-based frequency features across 14 sensors
