@@ -17,9 +17,10 @@ An end-to-end machine learning system that predicts the **Remaining Useful Life 
 | **Anomaly Detection** | Isolation Forest — 30% anomaly rate when RUL < 30 cycles |
 
 ---
-'''
+
 ## Project Structure
----
+
+```
 predictive_maintenance/
 ├── data/
 │   ├── raw/                         # NASA CMAPSS dataset
@@ -34,12 +35,15 @@ predictive_maintenance/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
-'''
+```
+
+---
+
 ## Key Features
 
 - **Time-series feature engineering** — rolling statistics, lag features, rate-of-change, FFT-based frequency features across 14 sensors
 - **XGBoost RUL prediction** — R² of 0.70 on validation set
-- **Isolation Forest anomaly detection** — detects 30% anomaly rate in final 30 cycles before failure vs <1% when healthy
+- **Isolation Forest anomaly detection** — detects 30% anomaly rate in final 30 cycles before failure vs less than 1% when healthy
 - **MLflow experiment tracking** — parameters, metrics, and model artifacts logged
 - **FastAPI REST API** — real-time RUL prediction endpoint
 - **Docker deployment** — fully containerized and portable
@@ -49,18 +53,21 @@ predictive_maintenance/
 ## Quickstart
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/Anjali12213443/predictive-maintenance-rul.git
 cd predictive-maintenance-rul
 ```
 
 ### 2. Run with Docker
+
 ```bash
 docker build -t predictive-maintenance-api .
 docker run -p 8000:8000 predictive-maintenance-api
 ```
 
 ### 3. Test the API
+
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" \
 -H "Content-Type: application/json" \
@@ -85,6 +92,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 ```
 
 ### Expected Response
+
 ```json
 {
   "engine_id": 1,
@@ -111,9 +119,9 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 
 | Predicted RUL | Status | Action |
 |---|---|---|
-| < 30 cycles | CRITICAL | Immediate maintenance required |
-| 30–60 cycles | WARNING | Schedule maintenance soon |
-| > 60 cycles | HEALTHY | Engine operating normally |
+| Less than 30 cycles | CRITICAL | Immediate maintenance required |
+| 30-60 cycles | WARNING | Schedule maintenance soon |
+| More than 60 cycles | HEALTHY | Engine operating normally |
 
 ---
 
