@@ -20,6 +20,20 @@ An end-to-end machine learning system that predicts the **Remaining Useful Life 
 
 ## Project Structure
 ---
+predictive_maintenance/
+├── data/
+│   ├── raw/                    # NASA CMAPSS dataset
+│   └── processed/              # Cleaned, featured, scaled data
+├── notebooks/
+│   ├── 01_eda.ipynb            # Exploratory data analysis
+│   ├── 02_feature_engineering.ipynb  # 70 engineered features
+│   ├── 03_modeling.ipynb       # XGBoost + MLflow tracking
+│   └── 04_anomaly_detection.ipynb    # Isolation Forest
+├── src/
+│   └── api.py                  # FastAPI REST API
+├── Dockerfile                  # Docker containerization
+├── requirements.txt
+└── README.md
 
 ## Key Features
 
