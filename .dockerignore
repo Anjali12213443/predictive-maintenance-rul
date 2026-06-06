@@ -1,0 +1,8 @@
+pred_env/
+notebooks/
+data/raw/
+data/processed/*.csv
+mlflow_runs/
+__pycache__/
+*.pyc
+.DS_Store

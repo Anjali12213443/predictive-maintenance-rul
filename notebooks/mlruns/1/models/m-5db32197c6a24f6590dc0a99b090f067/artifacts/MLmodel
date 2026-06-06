@@ -1,0 +1,22 @@
+artifact_path: /Users/singam/predictive_maintenance/notebooks/mlruns/1/models/m-5db32197c6a24f6590dc0a99b090f067/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.5
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: ubj
+    xgb_version: 3.2.0
+mlflow_version: 3.13.0
+model_id: m-5db32197c6a24f6590dc0a99b090f067
+model_size_bytes: 905457
+model_uuid: m-5db32197c6a24f6590dc0a99b090f067
+prompts: null
+run_id: fd1a4a8933a5411085530ac1f8f15631
+utc_time_created: '2026-06-06 18:08:39.432961'
