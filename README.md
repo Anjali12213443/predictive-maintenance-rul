@@ -22,16 +22,16 @@ An end-to-end machine learning system that predicts the **Remaining Useful Life 
 ---
 predictive_maintenance/
 ├── data/
-│   ├── raw/                    # NASA CMAPSS dataset
-│   └── processed/              # Cleaned, featured, scaled data
+│   ├── raw/                         # NASA CMAPSS dataset
+│   └── processed/                   # Cleaned and featured data
 ├── notebooks/
-│   ├── 01_eda.ipynb            # Exploratory data analysis
-│   ├── 02_feature_engineering.ipynb  # 70 engineered features
-│   ├── 03_modeling.ipynb       # XGBoost + MLflow tracking
-│   └── 04_anomaly_detection.ipynb    # Isolation Forest
+│   ├── 01_eda.ipynb                 # Exploratory data analysis
+│   ├── 02_feature_engineering.ipynb # 70 engineered features
+│   ├── 03_modeling.ipynb            # XGBoost + MLflow tracking
+│   └── 04_anomaly_detection.ipynb   # Isolation Forest
 ├── src/
-│   └── api.py                  # FastAPI REST API
-├── Dockerfile                  # Docker containerization
+│   └── api.py                       # FastAPI REST API
+├── Dockerfile
 ├── requirements.txt
 └── README.md
 
