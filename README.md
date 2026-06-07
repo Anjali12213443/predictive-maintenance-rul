@@ -2,6 +2,14 @@
 
 An end-to-end machine learning system that predicts the **Remaining Useful Life (RUL)** of industrial turbofan engines using sensor telemetry data, with anomaly detection, experiment tracking, and a production REST API deployed via Docker.
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-green)
+![MLflow](https://img.shields.io/badge/MLflow-Tracking-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-REST%20API-brightgreen)
+![Docker](https://img.shields.io/badge/Docker-Container-blue)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+
 ---
 
 ## Project Overview
